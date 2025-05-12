@@ -1,0 +1,331 @@
+id,title,selftext,score,num_comments,author,created_utc,url,upvote_ratio,over_18,edited,spoiler,stickied
+1kkloil,Barely staying afloat here :'),,349,2,plot_twist_incom1ng,2025-05-12 06:25:36,https://i.redd.it/np03np7coa0f1.jpeg,0,False,False,False,False
+1kk0xxg,Last 2 months I have been humbled by the data engineering landscape,"Hello All,
+
+For the past 6 years I have been working in the data analyst and data engineer role (My title is Senior Data Analyst ). I have been working with Snowflake writing stored procedures, spark using databricks, ADF for orchestration, SQL server, power BI & Tableau dashboards. All the data processing has been either monthly or quarterly. I was always under the impression that I was going to be quite employable when I try to switch at some point.
+
+But the past few months have taught me that there aren't many data analyst openings and the field doesn't pay squat and is mostly for freshers and the data engineering that I have been doing isn't really actual data engineering.
+
+All the openings I see require knowledge of Kafka, docker, kubernetes, microservices, airflow, mlops, API integration, CI/CD etc. This has left me stunned at the very least. I never knew that most of the companies required such a diverse set of skills and data engineering was more of SWE rather than what I have been doing. Seriously not sure what to think of the scenario I am in.",237,67,skatez101,2025-05-11 13:23:56,https://www.reddit.com/r/dataengineering/comments/1kk0xxg/last_2_months_i_have_been_humbled_by_the_data/,0,False,False,False,False
+1kkip1h,For those who have worked both in data engineering and software engineering....,"I am curious what was your role under each title, similarities and differences in knowledge and which you ultimately prefer and why?
+
+I know some people say DE is a subset of SWE, but I don't necessarily feel this way about my job. I see that there is a lot of debate about the DE role itself, so I'm not sure if there is a consensus of this role either. Basically, my DE job entails creating SQL tables, but more so than that a ton of my time just goes into trying to figure out what people want without any proper guidance or documentation. I don't interact with the stakeholders but I have colleagues who are supposed to translate to me what the stakeholders want. Except that they don't...they just tell me to complete a task with my only guiding documents being PDFs, data dictionaries, other documents related to the projects. Sometimes, my only guidance is previous projects, but when I use those as templates I'm told I can't rely on that since every project is different. This ends up just being a constant back and forth stream and when there is a level of concensus reached as to what exactly the project is supposed to accomplish, it finally becomes a clean table in SQL that is frequently used as the backend data source for a front-end application for stakeholders to use (I don't build this application). 
+
+I have touched Python very rarely at my job. I am supposed to get a task where I should be doing more stuff in Python but I'm not sure if that's even going to happen. 
+
+I'm kind of more a technically minded person. When my job requires me to find solutions by writing code and developing, I feel like I can tolerate my job more.  I'm not finding my current responsibilities technical enough for my liking. The biggest gripe I have is that the person who should be helping guide me with business/stakeholder needs is frequently too busy to communicate properly with me and never tells me what exactly the project is, what the stakeholders want and keeps telling me to 'read documents' to figure it out, documents that have zero guidance as to the project. When things get delayed because I have to spend forever trying to figure out what exactly I should be doing, there's a lot of frustration directed at me. 
+
+I personally think I'd be happier as a backend SWE, but I am uncertain and would love to hear from others what they preferred between DE and SWE and why. I would consider changing to a different DE role but with SQL being the only thing I use (I do have experience otherwise in Python and JavaScript, just not at my current job), I'm afraid I'm not going to be technically competitive enough for other DE roles either. I don't know what else to consider if I want to switch jobs. I've been told my skills may transfer to project/product management but that's not at all the direction I was thinking of taking my career in....
+
+
+
+",33,13,thro0away12,2025-05-12 03:20:29,https://www.reddit.com/r/dataengineering/comments/1kkip1h/for_those_who_have_worked_both_in_data/,0,False,False,False,False
+1kk5zup,"Why is ""Sort Merge Join"" is preferred over ""Shuffle Hash Join"" in Spark?","Hi all! 
+
+I am trying to upgrade my Spark skills (mainly using it as a user with little optimization) and some questions came to mind. I am reading everywhere that ""Sorted Merge Join"" is preferred over ""Shuffle Hash Join"" because:
+
+1. Avoids building a hash table.
+2. Allows to spill to disk.
+3. It is more scalable (as doesn't need to store the hashmap into memory). Which makes sense.
+
+Can any of you be kind enough to explain:
+
+* How sorting both tables (O(n log n)) is faster than building a hash table O(n)?
+* Why can't a hash table be spilled to disk (even on its own format)?
+
+  
+",30,6,DataGhost404,2025-05-11 17:12:49,https://www.reddit.com/r/dataengineering/comments/1kk5zup/why_is_sort_merge_join_is_preferred_over_shuffle/,0,False,False,False,False
+1kkm5aw,Polars in Rust vs golang custom implementation to replace Pandas real-time feature engineering,"We're maintaining a pandas based no-code feature engineering system for real-time pipeline served as an API service (batch processing uses Pyspark code), the operations are moderate to heavy such as grouby, rolling, aggregate, row-level apply methods, etc. currently we're able to get around 50 api response per second using pandas based backend, our aim is atleast around 200 api response per second.
+
+The options i was able to discover so far are, polars in python, polars in rust, golang custom implementation for all methods (I heard about gota in go, but it's not mature yet).
+
+I wanted to get some reviews about the options mentioned above in terms of our performance goal as well as complexity/efforts in terms of implementation. We don't have anyone currently familiar with rust ecosystem as of now, other languages are moderately familiar to us.
+
+Real-time pipeline would've max 10 uid at a time, mostly request against 1 uid record at a time (think max of 20-30 rows)",9,8,random_lurker01,2025-05-12 06:57:31,https://www.reddit.com/r/dataengineering/comments/1kkm5aw/polars_in_rust_vs_golang_custom_implementation_to/,0,False,False,False,False
+1kkk7vc,Launching a Discord Server for Data Engineering Interviews Prep! (Intern to Senior Level),"Hey folks!
+
+I just launched a new **Discord server** dedicated to helping **aspiring and experienced Data Engineers** prep for interviews — whether you're aiming for FAANG, fintech, or your first internship.
+
+🔗 **Join here**: [https://discord.gg/r2WRe5v8Pw](https://discord.gg/r2WRe5v8Pw)
+
+# 🧠 What’s Inside:
+
+* 📁 **Process Channels** (`#intern`, `#entry-level`, etc.) to share your application/interviews journey with `!process`commands
+* 🧪 **Mock Interviews Planning**: Find prep partners for recruiter, HM, system design, and behavioral rounds
+* 💬 **Voice Channels** for live mock interviews, Q&A, or chill study sessions
+* 📚 Channels for SQL, Python, Spark, System Design, DSA, and more
+* 🤝 A positive, no-BS community of folks actively prepping and helping each other grow
+
+Whether you're a student grinding for summer 2025 internships or a DE with 2–3 YOE looking to level up — this community is for you.
+
+Hope to see some of you there! 💬",11,0,NefariousnessSea5101,2025-05-12 04:49:51,https://www.reddit.com/r/dataengineering/comments/1kkk7vc/launching_a_discord_server_for_data_engineering/,0,False,False,False,False
+1kkmyj7,common database for metadata,"Hi, for example, i am using Apache Airflow and Open metadata, both of these tools are internally using postgres for storing metadata. When using separate services like this which uses database under the hood, should i use single database for both of these, or just let both tools create their own and manage metadata in separate postgres databases. I am deploying everything with Docker. ",6,3,Hot_While_6471,2025-05-12 07:55:21,https://www.reddit.com/r/dataengineering/comments/1kkmyj7/common_database_for_metadata/,0,False,False,False,False
+1kkaz9g,Iceberg or delta lake,"Which format is better iceberg or delta lake when you want to query from both snowflake and databricks ?? 
+
+",6,13,Own_Art1586,2025-05-11 20:48:38,https://www.reddit.com/r/dataengineering/comments/1kkaz9g/iceberg_or_delta_lake/,0,False,False,False,False
+1kkpf3o,Seeking Advice: Transitioning from Python Scripting to Building Data Pipelines,"Hello,
+
+I'm a student/employee at a governmental banking institution. My contract is due to end in November of this year at which point I'll graduate and be on the job market. My work so far has been scripting in Python to aggregate data and deliver it to my supervisor who does business specific analytics in Excel. I export data from SAP Business Objects and run a Python solution on it that does all of the cleaning, aggregations and delivers multiple csv files of which only two are actively used in Excel for dashboarding.
+
+We've had problems with documentation of the upstream data that had us waste a lot of time finding the right people to explain some of the things we needed to access to do what we do. So my supervisor wants us to have a suitable, structured way of documenting our work to contribute to the enhancement of the state of Data Cataloguing at our firm.
+
+On the other hand, I haven't felt satisfied in what I've been doing so far, 7 months into the work. My motivation has declined slowly and it's quite obvious that my relationship with my supervisor has suffered from it (lack of communication, not much work on the table, etc...). I would like to change this reality and give myself the opportunity to show that I could be more of use if I'm put to work on the technical aspects more so than following the trail of my supervisor on the business oriented work. I understand that I must ultimately be in service of the business goals but as explained above, doing Python scripting on excel and csv files then letting him do the dashboarding in Excel while I sit back and wait for another need to be done isn't very fulfilling on all levels (academically, I need to showcase how I used my technical expertise in DE. Professionally, I need to show that I worked on designing, implementing and maintaining robust data pipelines. The job market is hard enough as it is for the freshly graduated, not having any actual work under my belt on some of the widely used technologies in the field of DE)
+
+Eventually, the hope is to suggest a data pipeline to replace what we've been doing so far. Instead of exporting csv and excel from SAP Business Objects, loading in them in Python, doing transformations in Python, then exporting csv and excel files for the supervisor to load them using Power Query in Excel and do his dashboarding there I suggest the following:  
+\- Exporting from SAP BO and immediately loading into an Object Storage System, I have experience with MinIO.  
+\- Ingesting data from the files into PostgreSQL as a Data Warehouse.  
+\- Using DBT+Python to do the Transformations & Quality Control (Is it possible to only use DBT to preprocess the data, i.e remove duplicate rows, clean up columns, build new columns? I do these in Python already)  
+\- Using a different tool for BI (I worked with PowerBI & Metabase before)  
+\- Finally, a Data Catalog to document everything we're doing. I have experience with Datahub but my company uses Informatica Axon and I don't have access to ingesting any metadata or adding any data sources.
+
+I appreciate anyone who read my lengthy post and suggested their opinion on what I should do and how I should go about this. It's a really good company to work at (from a salary and reputation pov) so having a few years here under my belt after graduating would help my career significantly but I need to be of use to them for this.",3,2,JazzlikeFly484,2025-05-12 10:46:36,https://www.reddit.com/r/dataengineering/comments/1kkpf3o/seeking_advice_transitioning_from_python/,1,False,False,False,False
+1kkg2tv,Spark optimization for hadoop writer,"Hey there, 
+
+Im a bit of a spark ui novice and I'm trying to understand what is creating the bottle neck in my current glue job. For this run, we were using a g.8x with 2 workers.
+
+This job took 1 hour 14, and 30 minutes of the job were between 2 jobs. A GlueParquetHadoopWriter and rdd at DynamicFrame.
+
+I am trying to optimize these two tasks so i can reduce the job run time.
+
+My current theory is that we convert our spark dataframe to a dynamic frame so that we can write partitions out to our glue tables. I think this step is the rdd at Dynamic Frame job, i think its shuffling(?) to a rdd.
+
+The second job i think is the writes to s3, this being the GlueParquetHadoopWriter. Currently if we run this job for multiple days, we have to write out partitions at the day level, which i think makes the writes take longer. Example if we run for \~2 months, we have to partition the data to day level then write it out to s3 (60\~ partitions).
+
+Im struggling to come up with solutions on how to increase the write speed, we need the data in this partition structure for downstream so we are pretty locked. Would writing out bulk and having another job pick the file up to repartition it be faster? My mind thinks this just means we would then pay for cold start costs twice and get no real benefit.
+
+Interested to hear ideas people have on diagnosing/speeding up these tasks!  
+Thanks
+
+[jobs](https://preview.redd.it/2z9pmg5g190f1.png?width=1606&format=png&auto=webp&s=bc8480896d249246e1096773d51b80c06a8c01ea)
+
+[breakdown of GlueParquetHadoopWriter](https://preview.redd.it/l9tptrco190f1.png?width=1610&format=png&auto=webp&s=b59c6fb4de7b620827a6fc531c2f3321f0517209)
+
+[tasks of GlueParquetHadoopWriter](https://preview.redd.it/ycpusb9u190f1.png?width=1598&format=png&auto=webp&s=73b70e98729b8e6495458d27dfe551f4c458b65b)
+
+",2,3,Manyreason,2025-05-12 00:57:18,https://www.reddit.com/r/dataengineering/comments/1kkg2tv/spark_optimization_for_hadoop_writer/,0,False,False,False,False
+1kk9jxn,Deep research over Google Drive (open source!),"Hey r/dataengineering  community!
+
+We've added Google Drive as a connector in [Morphik](https://morphik.ai/), which is one of the most requested features.
+
+# What is Morphik?
+
+Morphik is an open-source end-to-end RAG stack. It provides both self-hosted and managed options with a python SDK, REST API, and clean UI for queries. The focus is on accurate retrieval without complex pipelines, especially for visually complex or technical documents. We have knowledge graphs, cache augmented generation, and also options to run isolated instances great for air gapped environments.
+
+# Google Drive Connector
+
+You can now connect your Drive documents directly to Morphik, build knowledge graphs from your existing content, and query across your documents with our research agent. This should be helpful for projects requiring reasoning across technical documentation, research papers, or enterprise content.
+
+Disclaimer: still waiting for app approval from google so might be one or two extra clicks to authenticate.
+
+# Links
+
+* Try it out: [https://morphik.ai](https://morphik.ai/)
+* GitHub: [https://github.com/morphik-org/morphik-core](https://github.com/morphik-org/morphik-core) (Please give us a ⭐)
+* Docs: [https://docs.morphik.ai](https://docs.morphik.ai/)
+* Discord: [https://discord.com/invite/BwMtv3Zaju](https://discord.com/invite/BwMtv3Zaju)
+
+We're planning to add more connectors soon. What sources would be most useful for your projects? Any feedback/questions welcome!
+
+# ",2,1,yes-no-maybe_idk,2025-05-11 19:46:41,https://www.reddit.com/r/dataengineering/comments/1kk9jxn/deep_research_over_google_drive_open_source/,0,False,False,False,False
+1kkqev7,How to handle changing data in archived entitys?,"I'm a student and trying out my first small GUI application. Because we already worked with csv-files for persistence, I want to do my current task using an embedded sqlite-database. But unlike the csv-file approach that I completed, there's a problem with database.
+
+The task is to make a small checkout for sales. The following models are needed
+
+Producttype  
+Product ; has a Produkttype  
+LineItem ; has a Product  
+Sale ; has a List of LineItems
+
+Where in the version of my task, where I used csv-files, it just saved Sales and thats it, a database will now cause a problem.
+
+I have a Product that references a Typ, a LineItem will reference a Product, a Sale references a List of LineItems.
+
+But a Sale is a one time event. So the ""history"" of Sales saved in the database shouldn't be able to be changed afterwards. But with a normalized database, when I someday change the price of a product, all the sales will also change, because of using references.
+
+My thoughts of possible solutions
+
+1 - Data Historization  
+I could copy all referenced data into an archive table, when an entity is about to be changed and change all referenced from the product to its archived version.
+
+2 - Product versioning  
+Basically the same as 1 but I have only one table and an extra attribute ""Version"" and everytime I change something the Version goes up, and the GUI will only fetch the ones with the highest version, while Sales reference the versions they were created with.
+
+3 - Denormalization  
+We were taught to normalize, but I also read that if needed, it's better to denormalize for simplicity instead of making everything super complicated to maybe save a bit of performance. By that I mean, I create a column for every attribute and save it directly in the Sales table. But that means this could in theory lead to infinite columns over a long enough time.
+
+So which option, or maybe a completely different one, is the goto method to solve this problem? Thank you for tips!",1,2,OwlUseful5863,2025-05-12 11:44:24,https://www.reddit.com/r/dataengineering/comments/1kkqev7/how_to_handle_changing_data_in_archived_entitys/,1,False,False,False,False
+1kkqcic,Dataform,"Hi,
+
+preface: we are on BigQuery & GCP on general for our data engineering stuff.  
+We are mostly using a data-lake approach with parquet files and probably delta tables in the future.  
+To transform the data we use dataform, since it has great integration in the google ecosystem.  
+Has anyone used both dataform and dbt in production and has a direct comparison? What did you like better and why?
+
+I have a strange feeling lately, for instance, they archived the dataform-scd repo on github (for scd type 2  implementation) without any explanation, also the documentation about it simply vanished (there is an italian version still online, but other than that..).  
+Why would they do that without any warning or explanation beforehand or at least after archiving it?  
+Do you think it is better to slowly prepare to switch do dbt or stay on dataform?",1,0,BusOk1791,2025-05-12 11:40:42,https://www.reddit.com/r/dataengineering/comments/1kkqcic/dataform/,1,False,False,False,False
+1kklrvr,Data Warehousing Dilemma: Base Fact Table + Specific Facts vs. Consolidated Fact - Which is Right?,"Hey r/dataengineering!
+
+I'm diving into Kimball dimensional modeling and have a question about handling different but related event types. I'm trying to decide between having a base interaction fact table with common attributes and then separate, more specific fact tables, versus consolidating everything into a single fact table.
+
+Here are the two options I'm considering for tracking user interactions on photos:
+
+**Option 1: Base Interaction Fact Table + Specific Fact Tables**
+
+SQL
+
+    CREATE TABLE fact_photo_interaction (
+        interaction_sk BIGSERIAL PRIMARY KEY,
+        interaction_type VARCHAR(20), -- 'VIEW', 'LIKE', 'COMMENT', 'SHARE', 'DOWNLOAD', 'REPORT'
+        photo_sk BIGINT NOT NULL,
+        user_sk BIGINT NOT NULL, -- Who performed the interaction
+        date_sk INTEGER NOT NULL,
+        time_sk INTEGER NOT NULL,
+        interaction_timestamp TIMESTAMP NOT NULL,
+        device_sk BIGINT NOT NULL,
+        location_sk BIGINT NOT NULL
+        -- is_undo BOOLEAN,
+        -- undo_timestamp TIMESTAMP
+    );
+    
+    CREATE TABLE fact_share (
+        interaction_sk BIGINT PRIMARY KEY REFERENCES fact_photo_interaction(interaction_sk),
+        sharer_user_sk BIGINT NOT NULL REFERENCES dim_user(user_sk), -- Explicit sharer if different
+        photo_sk BIGINT NOT NULL REFERENCES dim_photo(photo_sk),
+        date_sk INTEGER NOT NULL REFERENCES dim_date(date_sk),
+        time_sk INTEGER NOT NULL REFERENCES dim_time(time_sk),
+        share_channel VARCHAR(50),
+        -- Internal Shares (when share_channel=1)
+        recipient_user_sk BIGINT REFERENCES dim_user(user_sk)
+    );
+    
+    CREATE TABLE fact_comment (
+        interaction_sk BIGINT PRIMARY KEY REFERENCES fact_photo_interaction(interaction_sk),
+        user_sk BIGINT NOT NULL REFERENCES dim_user(user_sk),
+        photo_sk BIGINT NOT NULL REFERENCES dim_photo(photo_sk),
+        date_sk INTEGER NOT NULL REFERENCES dim_date(date_sk),
+        time_sk INTEGER NOT NULL REFERENCES dim_time(time_sk),
+        comment_text TEXT NOT NULL,
+        parent_comment_sk BIGINT DEFAULT 0, -- 0 = top-level
+        language_code VARCHAR(10),
+        sentiment_score DECIMAL,
+        reply_depth INTEGER DEFAULT 0
+    );
+    
+
+**Option 2: Consolidated Fact Table (as in the previous example)**
+
+SQL
+
+    CREATE TABLE fact_photo_interaction (
+        interaction_sk BIGSERIAL PRIMARY KEY,
+        interaction_type_sk INT NOT NULL,  -- FK to dim_interaction_type ('like', 'share', 'comment', etc.)
+        user_sk BIGINT NOT NULL,
+        photo_sk BIGINT NOT NULL,
+        timestamp TIMESTAMP NOT NULL,
+        share_channel_sk INT NULL,          -- Only for shares
+        recipient_user_sk BIGINT NULL,      -- Only for shares to specific users
+        comment_text TEXT NULL             -- Only for comments
+        -- ... other type-specific attributes with NULLs
+    );
+    
+
+**My question to the community is: Which of these two approaches is generally considered the ""correct"" or more advantageous way to go in Kimball modeling, and** ***why*****?**
+
+I'd love to hear your thoughts and experiences with both use cases. What are the pros and cons you've encountered? When would you choose one over the other? Specifically, what are the arguments *for* and *against* the base + specific fact table approach?
+
+Thanks in advance for your insights!
+
+",1,10,Ok-Outlandishness-74,2025-05-12 06:31:33,https://www.reddit.com/r/dataengineering/comments/1kklrvr/data_warehousing_dilemma_base_fact_table_specific/,0,False,False,False,False
+1kke6ae,Anyone using MariaDB 11.8’s vector features with local LLMs?,"I’ve been exploring MariaDB 11.8’s new vector search capabilities for building AI-driven applications, particularly with local LLMs for retrieval-augmented generation (RAG) of fully private data that never leaves the computer. I’m curious about how others in the community are leveraging these features in their projects.
+
+For context, MariaDB now supports vector storage and similarity search, allowing you to store embeddings (e.g., from text or images) and query them alongside traditional relational data. This seems like a powerful combo for integrating semantic search or RAG with existing SQL workflows without needing a separate vector database. I’m especially interested in using it with local LLMs (like Llama or Mistral) to keep data on-premise and avoid cloud-based API costs or security concerns.
+
+Here are a few questions to kick off the discussion:
+
+1. **Use Cases**: Have you used MariaDB’s vector features in production or experimental projects? What kind of applications are you building (e.g., semantic search, recommendation systems, or RAG for chatbots)?
+2. **Local LLM Integration**: How are you combining MariaDB’s vector search with local LLMs? Are you using frameworks like LangChain or custom scripts to generate embeddings and query MariaDB? Any recommendations which local model is best for embeddings?
+3. **Setup and Challenges**: What’s your setup process for enabling vector features in MariaDB 11.8 (e.g., Docker, specific configs)? Have you run into any limitations, like indexing issues or compatibility with certain embedding models?",1,1,OttoKekalainen,2025-05-11 23:18:07,https://www.reddit.com/r/dataengineering/comments/1kke6ae/anyone_using_mariadb_118s_vector_features_with/,0,False,False,False,False
+1kkayma,Does anyone have .ova file containing Hadoop and Spark?,"Hi, 
+
+I'm looking for an .ova file containing Hadoop and Spark. The ones available on the internet seem to be missing the [start.dhs.sh](http://start.dhs.sh), etc commands.
+
+I have tried manually downloading the software, but couldn't get past the .bashrc issue, and it would not recognize the above commands. Anything that works will be great. I'm only practising, and versions don't matter.
+
+Thank you.",1,0,sacred__nelumbo,2025-05-11 20:47:50,https://www.reddit.com/r/dataengineering/comments/1kkayma/does_anyone_have_ova_file_containing_hadoop_and/,0,False,False,False,False
+1kkfcnq,Compatible with legacy hist data,"Hi gents, migrating a data project at the moment, the old project takes API and store the flattened daily snapshots in SQL server (30 columns). And business logic is applied from here, then later on Aggregate or group for dashboard. 
+
+Big fan of medallion architecture, so I am using azure storage account to store the raw data in json files (one for each customer), I.e., {container-name}/{landing}/{yyyy}/{mm}/{dd}/{customer-name}.json 
+
+upon checking, the raw data if flattened, 91 columns. 
+
+What would be the strategy you would recommend?
+1. Turn the hist data (30 columns) into 91 columns and fill missed columns with null? And then transform it into the same format of the raw data in json and saved in the location
+2. Still save the raw json there in the landing, and make it to 30 columns to be compatible with hist data then load into staging?
+3. Any other ways you would do?
+
+
+For me, I always like to store whatever it is from data source to landing (raw), add some metadata like timestamp.
+
+And then I usually do from landing to staging, not cutting off any columns, only do column renamings, deal with empty cells, data type, formatting, removing white space, and save to staging layer as parquet (because it is holding the metadata dtypes and easier for the next stage to load) 
+
+The final stage is from staging to gold, here I would cut unnecessary columns, and apply business logic transformations. And save the csv to gold layer then aggregated result to SQL for dashboard. 
+
+
+
+
+
+
+
+",0,0,raulfanc,2025-05-12 00:18:30,https://www.reddit.com/r/dataengineering/comments/1kkfcnq/compatible_with_legacy_hist_data/,0,False,False,False,False
+1kkd65p,Refreshing Excel from files in SharePoint... Any way to avoid cache issues?,"Hey folks,
+
+We’re managing over 120 Excel workbooks (a.k.a. ""trackers"") that need to pull data from a few central sources. Currently, they're all pulling from .xlsx files. I figured the issues we've been having stems from that, so I am in the process of switching to Microsoft Access files for our data, but I don't know if it will help. It might help, but I don't think it will completely eliminate the issue after doing some more research. 
+
+
+
+Here’s the problem:
+
+* Users connect to the master data files via “Get Data > From SharePoint” from Excel workbooks hosted in SharePoint.
+* But when they refresh, the data source often points to a local cached path, like: C:\\Users\\username\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.MSO\\... 
+* Even though the database has been updated, Excel *sometimes* silently pulls an outdated cached version
+* Each user ends up with their own temp file path making refreshes unreliable
+
+Is there a better way to handle this? We can't move to SharePoint lists because the data is too large (500k+ rows). I also want to continue using the data connection settings (as opposed to queries) for the trackers because I can write a script to change all the data connections easily. Unfortunately, there are a lot of pivot tables where the trackers pull data from and those are a pain to deal with when changing data sources. 
+
+  
+We’re considering:
+
+* Mapping a SharePoint library to a network drive (WebDAV)
+* Hosting the Access DB on a shared network path (but unsure how Excel behaves there)
+
+Would love to hear what other teams have done for multi-user data refresh setups using SharePoint + Excel + Access (or alternatives).",0,2,DexterTwerp,2025-05-11 22:28:15,https://www.reddit.com/r/dataengineering/comments/1kkd65p/refreshing_excel_from_files_in_sharepoint_any_way/,0,False,False,False,False
+1kk7y09,Need advice on freelancing,"I am in the DE field since last 4.5 years and have worked on few data projects. I want to start freelancing to explore new opportunities and get wide array of skillsets, which is not always possible to gain from the day job.
+
+I need help to understand following things
+1. What skillsets are in demand for freelancing that I could learn?
+2. How many gigs are available for the grab in the market?
+3. How do I land some beginner projects( I'm ready to compromise on the fees)?
+4. How do i build the strong connections in DE so that I can build trust and create personal brand?
+
+
+I know this is like everything about freelancing in DE but any help will be appreciated.
+
+Thanks!",0,4,deadprisoner,2025-05-11 18:37:13,https://www.reddit.com/r/dataengineering/comments/1kk7y09/need_advice_on_freelancing/,0,False,False,False,False
+1kkaode,Need help building this Project,"I recently had an meeting for a data-related internship. Just a bit about my background: I have over a year of experience working as a backend developer using Django. The company I interviewed with is a startup based in Europe, and they’re working on building their own LLM using synthetic data.
+
+I had the meeting with one of the cofounders. I applied for a data engineering role, since I’ve done some projects in that area. But the role might change a bit — from what I understood, a big part of the work is around data generation. He also mentioned that he has a project in mind for me, which may involve LLMs and fine-tuning which I need to finish in order to finally get the contract for the Job.
+
+I’ve built end-to-end pipelines before and have a basic understanding of libraries like pandas, numpy, and some machine learning models like classification and regression. Still, I’m feeling unsure and doubting myself, especially since there’s not been a detailed discussion about the project yet. Just knowing that it may involve LLMs and ML/DL is making me nervous.Because my experiences are purely Data Engineering related and Backed development.
+
+I’d really appreciate some guidance on :
+
+— how should I approach this kind of project  once assigned that requires knowledge of LLMs and ML knowing my background, which I don’t have in a good way. 
+
+Would really appreciate your efforts if you could guide me on this.
+",0,2,___Nik_,2025-05-11 20:35:16,https://www.reddit.com/r/dataengineering/comments/1kkaode/need_help_building_this_project/,0,False,False,False,False
+1kka3r2,Convert any data format to any data format,"“Spent last night vibe coding [https://anytoany.ai](https://anytoany.ai) — convert CSV, JSON, XML, YAML instantly. Paid users get 100 conversions. Clean, fast, simple. Soft launching today. Feedback welcome! ❤️”
+
+
+
+",0,3,Popular-Stay-2637,2025-05-11 20:10:14,https://www.reddit.com/r/dataengineering/comments/1kka3r2/convert_any_data_format_to_any_data_format/,0,False,False,False,False
